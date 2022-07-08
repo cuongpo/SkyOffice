@@ -8,6 +8,8 @@
     "heroku-postbuild": "npm i && cd types && npm i && cd ../server && tsc --project tsconfig.server.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "tsc": "tsc",
+  "postinstall": "npm run tsc",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kevinshen56714/SkyOffice.git"
